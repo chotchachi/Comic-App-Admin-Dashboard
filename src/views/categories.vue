@@ -11,9 +11,11 @@
           <li><a href="#" class="icon-before icon-copy"></a></li>
         </ul>
       </transition>
-      <label class="search icon-before icon-search">
-        <input type="text" placeholder="Search">
-      </label>
+      <form class="search icon-before icon-search" @submit.prevent="handleSearch">
+        <label>
+          <input type="text" placeholder="Search category name" v-model="search">
+        </label>
+      </form>
       <router-link :to="{ name: 'new', params: { type: $route.params.type } }"><el-button type="primary" size="small" icon="el-icon-edit">Add item</el-button></router-link>
     </header>
     <el-table :data="categories" @selection-change="handleSelectionChange">
@@ -47,6 +49,7 @@ export default {
   name: 'posts',
   data () {
     return {
+      search: '',
       categories: [],
       selections: []
     }
@@ -57,7 +60,10 @@ export default {
   },
   methods: {
     initData () {
-      this.$services.category.get()
+      const params = { }
+      // search
+      if (this.search) params.q = this.search
+      this.$services.category.get({ params })
         .then(res => {
           this.categories = res.data
         })
@@ -68,6 +74,9 @@ export default {
     },
     handleSelectionChange (value) {
       this.selections = value
+    },
+    handleSearch () {
+      this.initData()
     }
   },
   watch: {
