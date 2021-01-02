@@ -9,9 +9,6 @@ class Category extends Resource {
     super('category')
   }
 
-  getComments (id, options) {
-    return this.get(`${id}/comments`, options)
-  }
 }
 
 export default new Category()

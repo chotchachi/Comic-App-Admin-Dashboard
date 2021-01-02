@@ -69,7 +69,7 @@ export default {
       const params = { }
       if (this.search) params.q = this.search
       // request
-      return this.$services.user.get({ params })
+      return this.$services.user.allUsers(params)
         .then(res => {
           // response
           this.users = res.data

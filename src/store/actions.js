@@ -1,4 +1,4 @@
-import { TokenService, UserService } from '../services'
+import { UserService } from '../services'
 import { CHANGE_TITLE, CHANGE_SESSION, TOGGLE_SIDEBAR_COLLAPSE, INCREMENT, DECREMENT } from './mutation-types'
 
 /**
@@ -9,7 +9,7 @@ const actions = {
     commit(CHANGE_TITLE, title)
   },
   createToken: async ({ commit }, { username, password }) => {
-    const res = await TokenService.post({
+    const res = await UserService.login({
       username: username.trim(),
       password: password.trim()
     })
@@ -23,7 +23,7 @@ const actions = {
     }
     // remote
     try {
-      await TokenService.get()
+      await UserService.checkToken()
       return true
     } catch (err) {
       console.error(err)
@@ -32,11 +32,11 @@ const actions = {
     }
   },
   deleteToken: async ({ commit, getters }) => {
-    // await TokenService.delete(getters.session.token)
+    await UserService.logout(getters.session.token)
     commit(CHANGE_SESSION, { token: null })
   },
   getCurrentUser: async ({ commit }) => {
-    const res = await UserService.get('me')
+    const res = await UserService.me()
     commit(CHANGE_SESSION, { user: res.data })
     return res.data
   },

@@ -1,5 +1,4 @@
 import {
-  TokenService,
   UserService,
   CategoryService
 } from '../services'
@@ -7,7 +6,6 @@ import {
 export default Vue => {
   // alias
   const services = {
-    token: TokenService,
     user: UserService,
     category: CategoryService
   }

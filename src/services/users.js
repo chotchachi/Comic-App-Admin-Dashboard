@@ -2,6 +2,28 @@
  * Users service
  */
 
-import Resource from './resource'
+import axios from '../utils/axios'
 
-export default new Resource('users')
+class User {
+  login(options) {
+    return axios.post('/users/login', options)
+  }
+
+  me() {
+    return axios.get('/users/me')
+  }
+
+  checkToken() {
+    return axios.get('/users/token')
+  }
+
+  logout(token) {
+
+  }
+
+  allUsers(options) {
+    return axios.get('/users/all', options)
+  }
+}
+
+export default new User()
