@@ -5,10 +5,7 @@
       <h1 class="title" v-else>{{ categories.length }} {{ categories.length === 1 ? 'item' : 'items' }}</h1>
       <transition name="fade">
         <ul class="action" v-show="selections.length">
-          <li><a href="#" class="icon-before icon-checkmark"></a></li>
-          <li><a href="#" class="icon-before icon-blocked"></a></li>
           <li><a href="#" class="icon-before icon-bin"></a></li>
-          <li><a href="#" class="icon-before icon-copy"></a></li>
         </ul>
       </transition>
       <form class="search icon-before icon-search" @submit.prevent="handleSearch">

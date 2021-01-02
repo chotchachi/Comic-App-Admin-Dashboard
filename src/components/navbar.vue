@@ -7,10 +7,9 @@
       <menu-list :items="header.menus"/>
       <ul class="list">
         <li class="item" v-if="session.user">
-          <a href="#">Hi, {{ session.user.name }}! <img class="avatar" :src="session.user.meta.avatar" :alt="session.user.name"></a>
+          <a href="#">Hi, {{ session.user.name }}! </a>
           <ul class="list">
-            <li class="item"><router-link :to="{ name: 'profile' }">Profile</router-link></li>
-            <li class="item"><router-link :to="{ name: 'profile' }">Edit profile</router-link></li>
+<!--            <li class="item"><router-link :to="{ name: 'profile' }">Profile</router-link></li>-->
             <li class="divider"></li>
             <li class="item"><a href="#" @click.prevent="logout">Logout</a></li>
           </ul>
@@ -37,7 +36,7 @@ export default {
   methods: {
     async logout () {
       await this.$store.dispatch('deleteToken')
-      this.$router.replace({ name: 'login' })
+      await this.$router.replace({ name: 'login' })
     }
   }
 }

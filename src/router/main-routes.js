@@ -8,8 +8,8 @@ export default [
   },
   // - Categories
   {
-    name: 'posts',
-    path: '/posts/:type',
+    name: 'category',
+    path: '/category/:type',
     meta: { requireAuth: true },
     component: () => import(/* webpackChunkName: 'posts' */ '../views/categories')
   },

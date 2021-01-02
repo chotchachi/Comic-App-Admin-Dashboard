@@ -5,51 +5,6 @@ export default {
   header: {
     name: process.env.VUE_APP_NAME,
     menus: [
-      {
-        text: '0',
-        icon: 'bubble',
-        name: 'comments'
-      },
-      {
-        text: 'New',
-        icon: 'plus',
-        name: 'new',
-        params: { type: 'blog' },
-        children: [
-          { text: 'Post', name: 'new', params: { type: 'blog' } },
-          { text: 'Media', name: 'upload' },
-          { text: 'Page', name: 'new', params: { type: 'page' } },
-          { text: 'User', name: 'users' }
-        ]
-      },
-      // Component Pages
-      {
-        text: 'Components',
-        icon: 'lab',
-        name: 'components',
-        children: [
-          { text: 'Icons', name: 'components-icons' },
-          { text: 'Button', name: 'components-button' },
-          { text: 'Table', name: 'components-table' }
-        ]
-      },
-      // Demo Pages
-      {
-        text: 'Demo',
-        icon: 'magic-wand',
-        name: 'demo',
-        children: [
-          { text: 'Data', name: 'demo-data' },
-          { text: 'Params', name: 'demo-params', params: { name: '汪磊' } },
-          { text: 'Vuex', name: 'demo-vuex' },
-          { text: 'I18n', name: 'demo-i18n' },
-          { divider: true },
-          { text: 'Proxy', name: 'demo-proxy' },
-          { text: 'CORS', name: 'demo-cors' },
-          { divider: true },
-          { text: 'NotFound', path: '/hello-world' }
-        ]
-      }
     ]
   },
   sidebar: {
@@ -73,10 +28,10 @@ export default {
       {
         text: 'Categories',
         icon: 'pushpin',
-        name: 'posts',
-        params: { type: 'blog' },
+        name: 'category',
+        params: { type: 'all' },
         children: [
-          { text: 'All categories', name: 'posts', params: { type: 'blog' } }
+          { text: 'All categories', name: 'category', params: { type: 'all' } }
         ]
       },
       {
