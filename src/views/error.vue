@@ -2,7 +2,7 @@
   <section class="error">
     <h1>404</h1>
     <h2>Not Found</h2>
-    <footer>← Back to <a href="/">WEDN.NET</a></footer>
+    <footer>← Back to <a href="/">COMIC APP</a></footer>
   </section>
 </template>
 

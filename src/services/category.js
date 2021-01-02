@@ -1,10 +1,10 @@
 /**
- * Posts service
+ * Category service
  */
 
 import Resource from './resource'
 
-class Posts extends Resource {
+class Category extends Resource {
   constructor () {
     super('category')
   }
@@ -14,4 +14,4 @@ class Posts extends Resource {
   }
 }
 
-export default new Posts()
+export default new Category()

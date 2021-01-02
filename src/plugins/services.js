@@ -1,21 +1,15 @@
 import {
-  OptionService,
   TokenService,
   UserService,
-  TermService,
-  PostService,
-  CommentService
+  CategoryService
 } from '../services'
 
 export default Vue => {
   // alias
   const services = {
-    option: OptionService,
     token: TokenService,
     user: UserService,
-    term: TermService,
-    post: PostService,
-    comment: CommentService
+    category: CategoryService
   }
 
   // mount the services to Vue
