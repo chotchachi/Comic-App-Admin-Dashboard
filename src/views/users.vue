@@ -56,9 +56,6 @@ export default {
       selections: [],
       total: 0,
       search: '',
-      sort: '',
-      order: '',
-      filter: {},
       loading: false
     }
   },
@@ -68,21 +65,15 @@ export default {
   },
   methods: {
     loadUsers () {
-      // toggle loading
       this.loading = true
-      // paginate
       const params = { }
-      // search
       if (this.search) params.q = this.search
-      // filter
-      Object.assign(params, this.filter)
       // request
       return this.$services.user.get({ params })
         .then(res => {
           // response
           this.users = res.data
           this.total = res.data.length
-          // toggle loading
           this.loading = false
         })
         .catch(err => {
@@ -91,7 +82,6 @@ export default {
           this.loading = false
         })
     },
-
     handleSearch () {
       this.loadUsers()
     }
