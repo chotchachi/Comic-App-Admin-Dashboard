@@ -52,6 +52,8 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.2" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -158,26 +160,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="375" y="232" key="EditFileWatcherDialog/0.0.1440.900@0.0.1440.900" timestamp="1610032434142" />
-    <state width="1419" height="174" key="GridCell.Tab.0.bottom" timestamp="1611338420875">
+    <state width="1419" height="174" key="GridCell.Tab.0.bottom" timestamp="1611406622853">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="174" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611338420875" />
+    <state width="1419" height="174" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611406622853" />
     <state width="1419" height="182" key="GridCell.Tab.0.bottom/0.25.1440.801@0.25.1440.801" timestamp="1610329283821" />
-    <state width="1419" height="174" key="GridCell.Tab.0.center" timestamp="1611338420874">
+    <state width="1419" height="174" key="GridCell.Tab.0.center" timestamp="1611406622852">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="174" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611338420874" />
+    <state width="1419" height="174" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611406622852" />
     <state width="1419" height="182" key="GridCell.Tab.0.center/0.25.1440.801@0.25.1440.801" timestamp="1610329283811" />
-    <state width="1419" height="174" key="GridCell.Tab.0.left" timestamp="1611338420873">
+    <state width="1419" height="174" key="GridCell.Tab.0.left" timestamp="1611406622851">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="174" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611338420873" />
+    <state width="1419" height="174" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611406622851" />
     <state width="1419" height="302" key="GridCell.Tab.0.left/0.0.1440.900@0.25.1440.801" timestamp="1608376744874" />
     <state width="1419" height="182" key="GridCell.Tab.0.left/0.25.1440.801@0.25.1440.801" timestamp="1610329283787" />
-    <state width="1419" height="174" key="GridCell.Tab.0.right" timestamp="1611338420875">
+    <state width="1419" height="174" key="GridCell.Tab.0.right" timestamp="1611406622852">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="174" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611338420875" />
+    <state width="1419" height="174" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611406622852" />
     <state width="1419" height="182" key="GridCell.Tab.0.right/0.25.1440.801@0.25.1440.801" timestamp="1610329283819" />
     <state width="1419" height="301" key="GridCell.Tab.1.bottom" timestamp="1611338314475">
       <screen x="0" y="0" width="1440" height="900" />
