@@ -1,39 +1,18 @@
 {
-  "name": "dashboard",
+  "name": "comicapp-admin",
   "version": "0.1.0",
   "private": true,
-  "description": "A dashboard scaffolding based on Vue.js created by Vue CLI.",
-  "keywords": [
-    "dashboard",
-    "scaffolding",
-    "vue",
-    "vue-cli",
-    "vue-i18n",
-    "vue-router",
-    "vuejs",
-    "vuex",
-    "zce"
-  ],
-  "homepage": "https://github.com/zce/dashboard#readme",
-  "bugs": {
-    "url": "https://github.com/zce/dashboard/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zce/dashboard.git"
-  },
-  "license": "MIT",
+  "description": "A admin dashboard for Comic App.",
   "author": {
-    "name": "zce",
-    "email": "w@zce.me",
-    "url": "https://zce.me"
+    "name": "Thanh Quang",
+    "email": "thanhquang.stahli@gmail.com"
   },
   "main": "N/A",
   "scripts": {
     "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "start": "node ./src/main.js"
+    "start": "vue-cli-service serve"
   },
   "husky": {
     "hooks": {
