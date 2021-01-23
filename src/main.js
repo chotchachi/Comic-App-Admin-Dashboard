@@ -1,10 +1,11 @@
 import Vue from 'vue'
+export default Vue
 import element from 'element-ui'
 import App from './app.vue'
-import i18n from './i18n'
-import store from './store'
-import router from './router'
-import plugins from './plugins'
+import i18n from './i18n/index.js'
+import store from './store/index.js'
+import router from './router/index.js'
+import plugins from './plugins/index.js'
 
 // global styles
 import './style.scss'
