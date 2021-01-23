@@ -35,6 +35,15 @@ export default {
         ]
       },
       {
+        text: 'Comics',
+        icon: 'pushpin',
+        name: 'comics',
+        params: { type: 'all' },
+        children: [
+          { text: 'Comics', name: 'comics', params: { type: 'all' } }
+        ]
+      },
+      {
         divider: true
       },
       {

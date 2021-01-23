@@ -1,13 +1,14 @@
 import {
   UserService,
-  CategoryService
+  CategoryService, ComicService
 } from '../services'
 
 export default Vue => {
   // alias
   const services = {
     user: UserService,
-    category: CategoryService
+    category: CategoryService,
+    comic: ComicService
   }
 
   // mount the services to Vue

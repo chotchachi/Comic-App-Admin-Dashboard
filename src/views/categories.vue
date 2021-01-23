@@ -43,7 +43,7 @@
 
 <script>
 export default {
-  name: 'posts',
+  name: 'categories',
   data () {
     return {
       search: '',
@@ -52,7 +52,7 @@ export default {
     }
   },
   created () {
-    this.$title = this.$route.params.type
+    this.$title = 'All Categories'
     this.initData()
   },
   methods: {

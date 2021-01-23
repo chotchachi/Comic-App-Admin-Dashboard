@@ -13,6 +13,13 @@ export default [
     meta: { requireAuth: true },
     component: () => import(/* webpackChunkName: 'posts' */ '../views/categories')
   },
+  // - Comics
+  {
+    name: 'comics',
+    path: '/comics/:type',
+    meta: { requireAuth: true },
+    component: () => import(/* webpackChunkName: 'posts' */ '../views/comics')
+  },
   // - Users
   {
     name: 'users',
